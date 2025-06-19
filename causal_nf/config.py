@@ -2,6 +2,8 @@ import argparse
 import collections
 import os
 
+from pathlib import Path
+
 from yacs.config import CfgNode as CN
 
 from causal_nf.utils.io import load_yaml, print_warning
@@ -10,7 +12,8 @@ import causal_nf.utils.wandb_local as wandb_local
 
 cfg = CN()
 
-DEFAULT_CONFIG_FILE = os.path.join("causal_nf", "configs", "default_config.yaml")
+ROOT = Path(__file__).resolve().parents[2]
+DEFAULT_CONFIG_FILE = os.path.join(ROOT, "causalflows", "causal_nf", "configs", "default_config.yaml")
 
 
 def parse_args():

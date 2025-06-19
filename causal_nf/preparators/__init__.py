@@ -1,1 +1,2 @@
 from .german_preparator import GermanPreparator
+from .law_preparator import LawSchoolPreparator

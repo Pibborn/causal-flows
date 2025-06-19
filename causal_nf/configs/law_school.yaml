@@ -1,0 +1,11 @@
+dataset:
+  name: law_school
+  batch_size: 256
+  split_seed: 42
+  sem_name: dummy
+  split: [0.8, 0.1, 0.1]
+model:
+  graph_file: graphs/law_school.yaml
+  base_distr: normal
+trainer:
+  max_epochs: 200
