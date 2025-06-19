@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "causal_nf"
+version = "0.0.0"
+description = "Local checkout of psanch21/causal-flows"
+requires-python = ">=3.9"
+
+[tool.setuptools]
+packages = ["causal_nf"]
+package-dir = {"" = "."}
+
